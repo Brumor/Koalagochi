@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#AED581"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.koala_gochi.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restart"
+                android:layout_margin="20dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/start_button"/>
+
+            <TextView
+                android:id="@+id/text_turn_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="test"
+                android:layout_margin="35dp"
+                android:singleLine="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/koala_image"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/status"
+                android:text="Appuie sur start pour commencer"
+                android:textStyle="bold|italic"
+                android:textSize="18sp"
+                style="@style/VariableStatusTextView"/>
+
+            <TextView
+                android:id="@+id/koala_thirst_status_text"
+                android:text="Soif"
+                style="@style/VariableStatusTextView"/>
+
+
+            <TextView
+                android:id="@+id/koala_hunger_status_text"
+                android:text="Faim"
+                style="@style/VariableStatusTextView"/>
+
+            <TextView
+                android:id="@+id/koala_happiness_status_text"
+                android:text="Bohneur"
+                style="@style/VariableStatusTextView"/>
+
+            <TextView
+                android:id="@+id/koala_sleepiness_status_text"
+                android:text="Sommeil"
+                style="@style/VariableStatusTextView"/>
+
+
+            <TextView
+                android:id="@+id/koala_toilette_status_text"
+                android:text="Couche"
+                style="@style/VariableStatusTextView"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+            <Button
+                android:id="@+id/give_drink_koala_button"
+                android:text="Donner du lait"
+                style="@style/KoalaVariableChangeButton"/>
+            <Button
+                android:id="@+id/feed_koala_button"
+                android:textSize="11sp"
+                android:text="Donner des feuilles d'Eucalyptus"
+                style="@style/KoalaVariableChangeButton"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <Button
+                android:id="@+id/cuddle_koala_button"
+                android:text="Faire un calin"
+                style="@style/KoalaVariableChangeButton"/>
+            <Button
+                android:id="@+id/sleep_koala_button"
+                android:text="Dodo / Reveil"
+                style="@style/KoalaVariableChangeButton"/>
+            <Button
+                android:id="@+id/toilette_koala_button"
+                android:text="Changer la couche"
+                style="@style/KoalaVariableChangeButton"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

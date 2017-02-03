@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#AED581"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Koala GoChi"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="13dp"
+        android:textSize="50sp"
+        android:singleLine="true"
+        />
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="40dp">
+        <TextView
+            android:id="@+id/entre_un_nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Entre un nom : "/>
+
+        <EditText
+            android:id="@+id/koala_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"/>
+
+        <CheckBox
+            android:id="@+id/game_length"
+            android:text="Jeux Rapide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"/>
+
+        <CheckBox
+            android:id="@+id/game_rythm"
+            android:text="Rythme Croissant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ce jeux à été fait pour ma petite chérie d'amour, je t'aime."
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="100dp"/>
+</RelativeLayout>
